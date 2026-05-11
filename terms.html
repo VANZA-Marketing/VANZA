@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="VANZA Marketing terms of service — the binding agreement governing your use of our website and digital marketing services." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Terms of Service | VANZA Marketing" />
+<meta property="og:description" content="The terms governing your use of VANZA Marketing's website and digital marketing services." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vanzamarketing.com/terms.html" />
+<meta property="og:image" content="https://vanzamarketing.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="VANZA Marketing — Digital Marketing for Small Businesses" />
+<meta property="og:site_name" content="VANZA Marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Terms of Service | VANZA Marketing" />
+<meta name="twitter:description" content="The terms governing your use of VANZA Marketing's website and digital marketing services." />
+<meta name="twitter:image" content="https://vanzamarketing.com/og-image.jpg" />
+<link rel="canonical" href="https://vanzamarketing.com/terms.html" />
+<title>Terms of Service | VANZA Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap');</style>
+<style>
+  :root {
+    --black: #0a0a0b; --white: #ffffff; --blue: #4FC3FF;
+    --blue-dim: rgba(79,195,255,0.12); --blue-glow: rgba(79,195,255,0.25);
+    --dark2: #0d1117;
+    --font-display: 'Geist', sans-serif; --font-body: 'DM Sans', sans-serif;
+    --nav-h: 80px; --max-w: 1200px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.75); background: var(--black); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  button { font-family: var(--font-body); cursor: pointer; border: none; background: none; }
+
+  .container { width: 90%; max-width: var(--max-w); margin: 0 auto; }
+  .blue { color: var(--blue); }
+
+  /* ── BUTTONS ── */
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: var(--black); font-family: var(--font-display); font-weight: 700; font-size: 0.92rem; padding: 12px 22px; border-radius: 999px; transition: all 0.25s var(--ease); border: none; cursor: pointer; }
+  .btn-primary:hover { background: #7fd6ff; transform: translateY(-1px); box-shadow: 0 12px 32px var(--blue-glow); }
+
+  /* ── NAV ── */
+  nav#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,10,11,0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: all 0.3s var(--ease); }
+  nav#nav.scrolled { background: rgba(10,10,11,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-color: rgba(255,255,255,0.08); box-shadow: 0 1px 0 rgba(0,0,0,0.3); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); }
+  .nav-logo { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; letter-spacing: -0.02em; color: var(--white); }
+  .nav-logo span { color: var(--blue); }
+  .nav-links { display: flex; gap: 36px; align-items: center; }
+  .nav-links a { font-size: 0.92rem; font-weight: 500; color: rgba(255,255,255,0.75); transition: color 0.2s; position: relative; }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-phone { display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+  .nav-phone:hover { color: var(--blue); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; background: transparent; border: none; cursor: pointer; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.25s; }
+  .mobile-menu { position: fixed; top: var(--nav-h); left: 0; right: 0; background: rgba(10,10,11,0.98); backdrop-filter: blur(20px); border-top: 1px solid rgba(255,255,255,0.08); padding: 32px; z-index: 99; transform: translateY(-110%); transition: transform 0.4s var(--ease); display: flex; flex-direction: column; gap: 16px; }
+  .mobile-menu.open { transform: translateY(0); }
+  .mobile-menu a { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; color: var(--white); padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+  /* ── TERMS HERO ── */
+  #terms-hero {
+    position: relative;
+    padding: calc(var(--nav-h) + 80px) 0 50px;
+    background: var(--black);
+    overflow: hidden;
+  }
+  #terms-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 1000px; height: 500px;
+    background: radial-gradient(ellipse at center, rgba(79,195,255,0.10) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 1; text-align: center; }
+  .hero-eyebrow {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--blue);
+    background: var(--blue-dim);
+    border: 1px solid rgba(79,195,255,0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    line-height: 1.08; letter-spacing: -0.02em;
+    color: var(--white); margin-bottom: 14px;
+  }
+  .hero-meta {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.5);
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── ARTICLE BODY ── */
+  #terms-body {
+    padding: 60px 0 100px;
+    background: var(--black);
+  }
+  .terms-content {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .terms-content > p:first-of-type {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 24px;
+  }
+  .terms-content p {
+    margin-bottom: 18px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8;
+  }
+  .terms-content h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin: 48px 0 16px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    line-height: 1.3;
+  }
+  .terms-content h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 24px;
+  }
+  .terms-content h2 .num {
+    display: inline-block;
+    margin-right: 12px;
+    color: var(--blue);
+    font-weight: 800;
+    font-size: 1rem;
+    vertical-align: middle;
+    background: var(--blue-dim);
+    border: 1px solid rgba(79,195,255,0.25);
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+  }
+  .terms-content ul {
+    margin: 0 0 22px 0;
+    padding-left: 0;
+  }
+  .terms-content ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+  }
+  .terms-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 4px; top: 11px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--blue);
+  }
+  .terms-content strong {
+    color: var(--white);
+    font-weight: 600;
+  }
+  .terms-content a {
+    color: var(--blue);
+    border-bottom: 1px solid rgba(79,195,255,0.3);
+    transition: border-color 0.2s;
+  }
+  .terms-content a:hover {
+    border-color: var(--blue);
+  }
+  .contact-block {
+    background: var(--dark2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin: 24px 0;
+  }
+  .contact-block strong { display: block; margin-bottom: 4px; font-family: var(--font-display); }
+  .contact-block .line {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  .contact-block a { color: var(--blue); border: none; }
+  .effective-date {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: 60px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+  }
+  .effective-date span {
+    color: var(--blue);
+  }
+  .accessibility-section {
+    background: var(--dark2);
+    border: 1px solid rgba(79,195,255,0.18);
+    border-radius: 18px;
+    padding: 36px 32px;
+    margin-top: 56px;
+  }
+  .accessibility-section h2 {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  /* ── FOOTER ── */
+  footer#footer { padding: 64px 0 32px; background: #060709; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 56px; margin-bottom: 48px; }
+  .footer-brand .nav-logo { font-size: 1.6rem; margin-bottom: 16px; display: inline-block; }
+  .footer-brand p { font-size: 0.92rem; color: rgba(255,255,255,0.55); line-height: 1.65; margin-bottom: 24px; max-width: 320px; }
+  .footer-contact { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .footer-contact a { display: inline-flex; align-items: center; gap: 10px; font-size: 0.88rem; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+  .footer-contact a:hover { color: var(--blue); }
+  .footer-contact svg { width: 14px; height: 14px; flex-shrink: 0; }
+  .footer-social { display: flex; gap: 10px; }
+  .social-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); display: inline-flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); transition: all 0.25s; }
+  .social-btn:hover { background: var(--blue); color: var(--black); border-color: var(--blue); }
+  .social-btn svg { width: 16px; height: 16px; }
+  .footer-col h3 { font-family: var(--font-display); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--white); margin-bottom: 18px; }
+  .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a { font-size: 0.9rem; color: rgba(255,255,255,0.55); transition: color 0.2s; }
+  .footer-col a:hover { color: var(--blue); }
+  .footer-bottom { padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.4); }
+  .footer-bottom-links { display: flex; gap: 22px; }
+  .footer-bottom-links a:hover { color: var(--blue); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .nav-links, .nav-phone { display: none; }
+    .hamburger { display: flex; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+    nav[aria-label="Navigation"] { display: none; }
+  }
+  @media (max-width: 800px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+    .footer-grid nav { display: none; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .container { width: 92%; }
+    #terms-hero { padding: calc(var(--nav-h) + 56px) 0 36px; }
+    #terms-body { padding: 44px 0 70px; }
+    .terms-content h2 { font-size: 1.3rem; margin-top: 36px; }
+    .accessibility-section { padding: 28px 22px; }
+  }
+  @media (max-width: 480px) {
+    .container { width: 94%; }
+    .terms-content { font-size: 0.95rem; }
+    .terms-content h2 .num { font-size: 0.85rem; padding: 3px 8px; margin-right: 8px; }
+    .mobile-menu { padding: 24px; }
+    .mobile-menu a { font-size: 1.2rem; padding: 10px 0; }
+  }
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#0a0a0b" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="VANZA Marketing home">VANZA<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="index.html#assessment">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+16198570501" class="nav-phone" aria-label="Call VANZA Marketing">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15l-.08.92z"/></svg>
+          (619) 857-0501
+        </a>
+        <a href="index.html#assessment" class="btn-primary">Get A Quote</a>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="services.html" onclick="closeMobile()">Services</a>
+  <a href="industries.html" onclick="closeMobile()">Industries</a>
+  <a href="portfolio.html" onclick="closeMobile()">Portfolio</a>
+  <a href="about.html" onclick="closeMobile()">About</a>
+  <a href="insights.html" onclick="closeMobile()">Insights</a>
+  <a href="index.html#assessment" onclick="closeMobile()">Contact</a>
+  <a href="tel:+16198570501">(619) 857-0501</a>
+  <a href="index.html#assessment" class="btn-primary" style="width:100%; justify-content:center; font-size:1rem;" onclick="closeMobile()">Get A Quote</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="terms-hero" aria-labelledby="terms-hero-heading">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Legal</span>
+      <h1 class="hero-title" id="terms-hero-heading">Terms of Service</h1>
+      <div class="hero-meta">Effective: February 20, 2022</div>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<section id="terms-body">
+  <div class="container">
+    <article class="terms-content">
+
+      <p>These terms of service constitute a binding agreement between VANZA Marketing and you as a client, and apply to all services provided by VANZA Marketing to you, including but not limited to internet marketing and website design services. References to "we," "us," "our," and "VANZA Marketing" refer to VANZA Marketing, LLC. References to "you" and "your" refer to the recipient of VANZA Marketing, LLC's internet marketing and website design services, including the recipient's successors and assigns.</p>
+
+      <p>Thank you for your interest in using VANZA Marketing's services (the "Service") operated by VANZA Marketing, LLC. These Terms of Service (the "Terms") govern your use of the Service, your use of any software that VANZA Marketing makes available to users of the Service (the "Software"), and your use of the VANZA Marketing website currently located at <a href="https://vanzamarketing.com">www.vanzamarketing.com</a> (the "Site"). In these Terms, the Service, the Software, and the Site are collectively referred to as the "VANZA Marketing Network."</p>
+
+      <p>Please read these Terms carefully. By using the VANZA Marketing Network, you are acknowledging that you have read and understood, and agree to be bound by, these Terms. If you do not agree to these Terms, you may not use the VANZA Marketing Network. The VANZA Marketing Network may be accessed from certain third-party websites. Your use of such third-party websites may be subject to applicable terms of service that are different from these Terms.</p>
+
+      <h2><span class="num">01</span>Confidentiality and Non-Disclosure</h2>
+      <p>We will not disclose any confidential information relating to your company or its online advertising campaigns.</p>
+
+      <h2><span class="num">02</span>Limitation of Liability</h2>
+      <p>To the extent permitted under applicable law, in no event will VANZA Marketing or its officers, employees, directors, shareholders, subsidiaries, affiliates, agents, or licensors be liable under any theory of liability (whether in contract, tort, statutory, or otherwise) for any statutory, indirect, incidental, special, consequential, or exemplary damages, including but not limited to, damages for loss of revenues, attorneys' fees and costs, profits, goodwill, use, data, or other intangible losses (even if such parties were advised of, knew of, or should have known of the possibility of such damages), resulting from your (or anyone using your accounts') use of the VANZA Marketing Network. If either party is unable to perform any obligation under this agreement, either party will have no liability for inability to supply the service.</p>
+
+      <h2><span class="num">03</span>Termination</h2>
+      <p>Either party may terminate this service at any time for any reason by giving 30-day notice to the other party in writing.</p>
+
+      <h2><span class="num">04</span>Assignment</h2>
+      <p>You agree not to assign, resell, sublease, or transfer the Service (or any part thereof), or any rights or obligations under the terms of this agreement, without prior written consent from VANZA Marketing.</p>
+
+      <h2><span class="num">05</span>Privacy</h2>
+      <p>VANZA Marketing is committed to protecting your privacy. To view our privacy policy, please visit <a href="privacy.html">vanzamarketing.com/privacy</a>.</p>
+
+      <h2><span class="num">06</span>Governing Law</h2>
+      <p>This Agreement shall be governed by and construed and enforced in accordance with the laws of the State of California and the federal laws of the United States of America. Actions relating to this Agreement, including but not limited to its interpretation, application, or existence, shall be brought in San Diego County, California, and Client irrevocably consents to the jurisdiction of such courts.</p>
+
+      <h2><span class="num">07</span>Copyright Infringement Notice Procedure</h2>
+      <p><strong>Copyright Infringement Notification.</strong> VANZA Marketing respects the intellectual property rights of others. Upon proper notice, VANZA Marketing will remove any content that violates copyright law, suspend access to the VANZA Marketing Network (or any portion thereof) to any user who uses the VANZA Marketing Network in violation of copyright law, and retains the right at its sole and exclusive discretion to terminate the accounts of repeat infringers.</p>
+      <p>Pursuant to Title 17 of the U.S. Code, Section 512, VANZA Marketing has implemented procedures for receiving written notification of claimed copyright infringement and for processing such claims in accordance with such law. If you believe your work has been copied in a way that constitutes copyright infringement, please send VANZA Marketing's copyright agent a notification of claimed infringement with all of the following information:</p>
+      <ul>
+        <li>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works are covered by a single notification, a representative list of such works</li>
+        <li>Identification of the claimed infringing material and information reasonably sufficient to permit VANZA Marketing to locate the material on the VANZA Marketing Network</li>
+        <li>Information reasonably sufficient to permit VANZA Marketing to contact you, such as an address, telephone number, and, if available, an email address</li>
+        <li>A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law</li>
+        <li>A statement by you, made under penalty of perjury, that the above information in your notification is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf</li>
+        <li>Your physical or electronic signature</li>
+      </ul>
+      <p>Please send a notice that includes all of the above information ("Notice of Infringement") to the following VANZA Marketing copyright agent:</p>
+      <div class="contact-block">
+        <strong>VANZA Marketing Copyright Agent</strong>
+        <div class="line">c/o VANZA Marketing, LLC</div>
+        <div class="line">San Diego, CA</div>
+        <div class="line"><a href="mailto:sales@vanzamarketing.com">sales@vanzamarketing.com</a></div>
+      </div>
+
+      <h2><span class="num">08</span>Exclusions and Limitations</h2>
+      <p>Some jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for incidental or consequential damages. Accordingly, some of the above limitations and disclaimers may not apply to you. To the extent VANZA Marketing may not, as a matter of applicable law, disclaim any implied warranty or limit its liabilities, the scope and duration of such warranty and the extent of VANZA Marketing's liability shall be the minimum permitted under such applicable law.</p>
+
+      <h2><span class="num">09</span>Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless VANZA Marketing, its subsidiaries, affiliates, officers, directors, employees, consultants, and agents from and against any and all claims, liabilities, damages, losses, costs, expenses, fees (including reasonable attorneys' fees and costs) that they may incur as a result of or arising from:</p>
+      <ul>
+        <li>Any information (including, without limitation, your User Submissions, Feedback, or any other content) you (or anyone using your account) submit, post, or transmit on or through the VANZA Marketing Network</li>
+        <li>Your (or anyone using your accounts') use of the Service and the VANZA Marketing Network (including, without limitation, any and all purchases)</li>
+        <li>Your (or anyone using your account's) violation of these Terms</li>
+        <li>Your (or anyone using your accounts') violation of any rights of any other person or entity, including, without limitation, any copyright, patent, trademark, trade secret, or other proprietary rights of any person or entity, or the Americans with Disabilities Act and any other applicable accessibility laws or regulations whether state or federal</li>
+      </ul>
+      <p>VANZA Marketing reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will cooperate with VANZA Marketing in asserting any available defenses.</p>
+
+      <h2><span class="num">10</span>Cancellation</h2>
+      <p>In order to protect you, to cancel your service, you must contact VANZA Marketing directly via telephone at <a href="tel:+16198570501">(619) 857-0501</a> so we can authenticate that you are the account's authorized user. Cancellation requests must be verbally communicated to ensure cancellation is by the authorized user.</p>
+
+      <h2><span class="num">11</span>Modifications</h2>
+      <p>VANZA Marketing may, in its sole and absolute discretion, change these Terms from time to time. In case of any material change to these Terms, we will replace the "Terms of Service" link on our home page with a link entitled "Terms of Service: Updated" for no less than 30 days. All changes to the Terms or the Privacy Policy will be effective when posted, and your continued use of the Service after the posting will constitute acceptance of, and agreement to be bound by, those changes. If you object to any such changes, your sole recourse shall be to cease using VANZA Marketing services.</p>
+
+      <h2><span class="num">12</span>Recurring Payments</h2>
+      <p>You agree to allow VANZA Marketing permission to set up recurring payments for monthly management fees to the credit card you provided. Monthly management fees are billed in advance for each month of service and are separate from setup fees and will be charged monthly until you request cancellation.</p>
+
+      <h2><span class="num">13</span>Third-Party Advertising Costs</h2>
+      <p>Actual costs from third-party advertisers, if applicable (e.g., Google, Facebook, etc.), must be paid by you and directly to the advertiser(s). You agree to establish and manage a billing relationship directly with the third-party advertiser(s).</p>
+
+      <h2><span class="num">14</span>Suspension of Service</h2>
+      <p>VANZA Marketing retains the right in its sole and exclusive discretion to suspend service and/or access to service if it believes that there may be a security breach.</p>
+
+      <h2><span class="num">15</span>Third-Party Account Setup</h2>
+      <p>In the event that VANZA Marketing assists you in creating an account with any third-party entity (websites, advertisers, or other entity), you agree that any privacy policies, terms, conditions, and/or legal agreements of any kind are agreements between you and the third party and not between VANZA Marketing and the third party.</p>
+
+      <h2><span class="num">16</span>Domain Modifications and Transfers</h2>
+      <p>In the event of a domain modification, transfer, or forwarding, you are responsible for responding to communications made by VANZA Marketing in an effort to modify or transfer domains. VANZA Marketing is not liable for any loss of email or any delays that may be caused by domain modifications or transfers. When authorizing the transfer of a domain, you are still the owner of the domain. It is your responsibility to renew the domain name. If you fail to follow the instructions given to assist in the transfer, your domain will remain with your current registry. Only the DNS will be modified to point your domain to your VANZA Marketing website. Domain purchases are non-refundable and subject to availability.</p>
+
+      <h2><span class="num">17</span>Domain Renewal</h2>
+      <p>VANZA Marketing is not responsible for the renewal of domain names. Maintenance and renewal of domain names is your responsibility.</p>
+
+      <h2><span class="num">18</span>Refunds on Setup and Design Fees</h2>
+      <p>Once a website is created and published and 30 days have elapsed, no refunds will be given on setup and design fees, even if the site is published on a temporary domain or with partial or default content.</p>
+
+      <h2><span class="num">19</span>Content Responsibility</h2>
+      <p>You are responsible for providing all content that will be posted on and used in connection with your site. Stock photos and graphics may be used until you submit photos or other content. You should take reasonable care and act with reasonable diligence in securing and providing your own content for posting. VANZA Marketing is not responsible for reviewing and/or evaluating the content provided by you for your site for compliance with accessibility standards including the WCAG 2.1 AA, any future iterations of WCAG, and/or the future codification of formal accessibility standards or regulations for websites.</p>
+
+      <h2><span class="num">20</span>Pre-Written Content Ownership</h2>
+      <p>VANZA Marketing shall be the owner of the copyright with respect to any pre-written content that we provide for your website. VANZA Marketing makes no representations as to whether the content it authors or provides complies with relevant accessibility standards including the WCAG 2.1 AA, any future iterations of the WCAG, and/or the future codification of formal accessibility standards or regulations for websites.</p>
+
+      <h2><span class="num">21</span>Client-Provided Content Ownership</h2>
+      <p>You will be the owner of the copyright with respect to text that you author and submit for your website. You unconditionally represent and warrant that you are the owner, assignee, or authorized user of any and all copyrights or trademarks with respect to the content that you post to your website. This includes, without limitation, text, images, photographs, and graphic designs. We are not responsible for verifying your ownership of such rights. You agree to hold harmless, protect, and defend VANZA Marketing from any claim or suit arising from the use of such elements you provide for or post to the website.</p>
+
+      <h2><span class="num">22</span>Accessibility Compliance</h2>
+      <p>VANZA Marketing makes no representations or warranties as it relates to the level of accessibility of its websites and, specifically, whether its websites comply with the Web Content Accessibility Guidelines (WCAG) 2.1 standards. The landscape of digital accessibility is an ever-changing one, and VANZA Marketing strongly recommends that you evaluate how it applies to your website and what you can do to make your website meaningfully accessible to the disabled community. In no event will VANZA Marketing, LLC or its subsidiaries, affiliates, directors, officers, agents, contractors, partners, affiliates, employees, contractors, co-branders, advertisers, and other partners be liable under any theory of liability (whether in contract, tort, statutory, or otherwise) for any indirect, incidental, special, consequential, or exemplary damages, including but not limited to, damages for loss of revenues, profits, goodwill, use, data, or other intangible losses resulting from a claim against you for purported accessibility laws and/or regulations of any kind.</p>
+
+      <h2><span class="num">23</span>Lawful Use</h2>
+      <p>All services offered by VANZA Marketing are to be used lawfully. This includes any federal, state, and local laws, as well as the rules of the acceptable use policies for the internet as a whole.</p>
+
+      <h2><span class="num">24</span>No Liability for Lost Data or Profits</h2>
+      <p>VANZA Marketing will not be responsible for lost data, lost profits, opportunity costs, or other consequential damages, or for any damages suffered or revenues lost through the use of our services or for loss of service due to network outages, regardless of cause (including but not limited to: human error, hardware failure, software failure, or telephone company or ISP outages). VANZA Marketing's liability for any claims whatsoever, whether arising in tort or contract, including claims based on design, error, omission, negligence, defect, failure to maintain service, discrimination, or any other claim, shall not exceed the contract price herein.</p>
+
+      <h2><span class="num">25</span>Third-Party Products and Services</h2>
+      <p>VANZA Marketing may, from time to time, deliver, offer, integrate, or utilize products, software, and/or services provided by a third-party provider. VANZA Marketing makes no representations about the suitability of any third-party products or services for any purpose.</p>
+
+      <h2><span class="num">26</span>Delinquent Payments</h2>
+      <p>If you are delinquent on any payment, VANZA Marketing may deactivate a website or software service without notice. If your account is delinquent, you agree that VANZA Marketing may communicate this delinquency to you via email.</p>
+
+      <h2><span class="num">27</span>Credit Card Updates</h2>
+      <p>If you have paid for services by credit card and you do not provide VANZA Marketing with an updated credit card expiration date, and the card expiration date lapses, you agree to allow VANZA Marketing to extend the expiration date by 2 years.</p>
+
+      <h2><span class="num">28</span>Cancellations</h2>
+      <p>You, or your authorized representative, must make any cancellation request for your recurring services. VANZA Marketing will not be required to acknowledge cancellation requests from unauthorized parties. In order to cancel service, you must contact VANZA Marketing customer service via telephone at <a href="tel:+16198570501">(619) 857-0501</a>. All cancellation requests must be verbally communicated directly to a VANZA Marketing manager. Requests received after the client's billing due date forfeit the opportunity for reimbursement for that month, and instead, service will be terminated the following month.</p>
+
+      <h2><span class="num">29</span>Notices</h2>
+      <p>You agree to accept notices delivered via email from VANZA Marketing regarding service, Terms of Service, billing, and marketing-related issues.</p>
+
+      <h2><span class="num">30</span>Communication Cooperation</h2>
+      <p>Client will support VANZA Marketing's staff by returning calls and/or emails as needed.</p>
+
+      <div class="accessibility-section">
+        <h2>Accessibility Statement</h2>
+        <p>We are committed to providing a website that is accessible to and usable by the broadest possible audience including those with communication disabilities. We remain committed to materially complying with the Web Content Accessibility Guidelines (WCAG) 2.1 AA of the World Wide Web Consortium (W3C). We recognize that website accessibility, and specifically the WCAG 2.1 AA, is evolving and we continue to monitor new developments and make modifications as are necessary.</p>
+        <p>Should you have any questions about our accessibility policy or have issues accessing our website for any reason, please contact us either via phone at <a href="tel:+16198570501">(619) 857-0501</a> or via email at <a href="mailto:sales@vanzamarketing.com">sales@vanzamarketing.com</a>.</p>
+      </div>
+
+      <div class="effective-date">Effective Date: <span>February 20, 2022</span></div>
+
+    </article>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">VANZA<span style="color:var(--blue)">.</span></div>
+        <p>VANZA Marketing connects strategy, content, and advertising so businesses can get seen, attract attention, and turn that attention into real revenue.</p>
+        <div class="footer-contact" aria-label="Contact information">
+          <a href="tel:+16198570501" aria-label="Call us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15l-.08.92z"/></svg>
+            (619) 857-0501
+          </a>
+          <a href="mailto:sales@vanzamarketing.com" aria-label="Email us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            sales@vanzamarketing.com
+          </a>
+          <a href="#" aria-label="Our office address">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San Diego, CA
+          </a>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+          <a class="social-btn" href="https://www.facebook.com/share/1Bdb8GV7ik/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="VANZA Marketing on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a class="social-btn" href="https://www.instagram.com/vanzamarketing/" target="_blank" rel="noopener noreferrer" aria-label="VANZA Marketing on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a class="social-btn" href="https://www.linkedin.com/company/vanzamarketing/about/" target="_blank" rel="noopener noreferrer" aria-label="VANZA Marketing on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <nav aria-label="Navigation">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="index.html#assessment">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav aria-label="Resources">
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="index.html#assessment">Free Assessment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#assessment">Get A Quote</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copy-year">2025</span> VANZA Marketing. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="index.html#assessment">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('copy-year').textContent = new Date().getFullYear();
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let menuOpen = false;
+  hamburger.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+    hamburger.setAttribute('aria-expanded', menuOpen);
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+  });
+  function closeMobile() {
+    menuOpen = false;
+    mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>

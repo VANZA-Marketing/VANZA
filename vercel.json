@@ -1,0 +1,49 @@
+{
+  "redirects": [
+    {
+      "source": "/articles/how-better-content-helps-customers-choose-your-business.html",
+      "destination": "/articles/better-content-helps-customers-choose.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-google-business-profile-optimization-helps-local-businesses-grow.html",
+      "destination": "/articles/google-business-profile-optimization.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-local-seo-helps-businesses-get-found-online.html",
+      "destination": "/articles/local-seo-get-found-online.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/what-makes-a-local-business-look-trustworthy-online.html",
+      "destination": "/articles/local-business-trustworthy-online.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/why-online-reviews-help-customers-choose-your-business.html",
+      "destination": "/articles/online-reviews-help-customers-choose.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/why-seo-matters-for-small-business-websites.html",
+      "destination": "/articles/why-seo-matters-small-business.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/why-small-businesses-need-a-strong-digital-foundation.html",
+      "destination": "/articles/small-businesses-digital-foundation.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/why-web-design-is-about-more-than-looking-good.html",
+      "destination": "/articles/web-design-more-than-looking-good.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/why-your-website-should-work-like-a-sales-system.html",
+      "destination": "/articles/website-as-sales-system.html",
+      "permanent": true
+    }
+  ]
+}

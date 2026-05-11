@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="The page you're looking for doesn't exist. Head back home or browse our services, portfolio, or insights." />
+<meta name="robots" content="noindex, follow" />
+<title>Page Not Found | VANZA Marketing</title>
+<link rel="canonical" href="https://vanzamarketing.com/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap');
+</style>
+<style>
+  :root {
+    --black: #0a0a0b;
+    --white: #ffffff;
+    --blue: #4FC3FF;
+    --blue-glow: rgba(79,195,255,0.25);
+    --font-display: 'Geist', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: var(--font-body);
+    background: var(--black);
+    color: rgba(255,255,255,0.75);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+    overflow-x: hidden;
+    position: relative;
+  }
+  body::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px; height: 700px;
+    background: radial-gradient(ellipse at center, rgba(79,195,255,0.12) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+    animation: fadeUp 0.7s var(--ease) both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .logo {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 60px;
+    text-decoration: none;
+  }
+  .logo span { color: var(--blue); }
+  .code {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(6rem, 18vw, 10rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, var(--blue), #8edcff);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto 36px;
+  }
+  .actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.92rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.25s var(--ease);
+  }
+  .btn-primary {
+    background: var(--blue);
+    color: var(--black);
+    font-weight: 700;
+  }
+  .btn-primary:hover { background: #7fd6ff; transform: translateY(-1px); box-shadow: 0 12px 32px var(--blue-glow); }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid rgba(255,255,255,0.2);
+  }
+  .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+  .quick-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+  .quick-links a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .quick-links a:hover { color: var(--blue); }
+  @media (max-width: 480px) {
+    .actions .btn { width: 100%; justify-content: center; }
+    .quick-links { gap: 18px; }
+  }
+</style>
+</head>
+<body>
+  <main class="container">
+    <a href="/" class="logo" aria-label="VANZA Marketing home">VANZA<span>.</span></a>
+    <div class="code" aria-hidden="true">404</div>
+    <h1>This page took the day off.</h1>
+    <p>The link might be broken, the page might have moved, or it never existed. Head back home or jump to one of the most-visited pages below.</p>
+    <div class="actions">
+      <a href="/" class="btn btn-primary">
+        Back to Home
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="/insights.html" class="btn btn-outline">Browse Articles</a>
+    </div>
+    <nav class="quick-links" aria-label="Popular pages">
+      <a href="/services.html">Services</a>
+      <a href="/industries.html">Industries</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/about.html">About</a>
+      <a href="/insights.html">Insights</a>
+    </nav>
+  </main>
+</body>
+</html>
