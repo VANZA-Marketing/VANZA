@@ -329,6 +329,24 @@
     object-position: top center;
     transition: transform 0.6s var(--ease);
   }
+  .work-image-wrap a { display: block; width: 100%; height: 100%; position: relative; }
+  .work-image-wrap a::after {
+    content: '↗ Visit Site';
+    position: absolute;
+    inset: 0;
+    background: rgba(79,195,255,0.18);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s var(--ease);
+  }
+  .work-card:hover .work-image-wrap a::after { opacity: 1; }
   .work-image-wrap--center img {
     object-position: 38% 38%;
   }
@@ -731,9 +749,11 @@
 
       <!-- 1. Glisten Co. -->
       <article class="work-card reveal">
+        <a href="https://glistenco.com/?srsltid=AfmBOooXqoZWVM0TWQ1DxlKUgU_J70WH5EuBTxcOFpgz6fWdU0BUpUv3" target="_blank" rel="noopener noreferrer" aria-label="Visit Glisten Co. website" style="display:block;">
         <div class="work-image-wrap work-image-wrap--center">
           <img src="portfolio-images/glisten-co.jpg" alt="Glisten Co. cleaning company website homepage with a soft blue color palette and clean product photography." loading="lazy" />
         </div>
+        </a>
         <div class="work-body">
           <span class="work-tag">Cleaning Services</span>
           <h2 class="work-name">Glisten Co.</h2>
@@ -749,9 +769,11 @@
 
       <!-- 2. Local Junk Man -->
       <article class="work-card reveal reveal-delay-1">
+        <a href="https://www.localjunkman.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Local Junk Man website" style="display:block;">
         <div class="work-image-wrap">
           <img src="portfolio-images/local-junk-man.jpg" alt="Local Junk Man homepage featuring a retro-inspired logo and friendly mascot illustration in a cream and red palette." loading="lazy" />
         </div>
+        </a>
         <div class="work-body">
           <span class="work-tag">Junk Removal</span>
           <h2 class="work-name">Local Junk Man</h2>
@@ -767,9 +789,11 @@
 
       <!-- 3. PONO Security -->
       <article class="work-card reveal">
+        <a href="https://ponosecurity.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit PONO Security website" style="display:block;">
         <div class="work-image-wrap">
           <img src="portfolio-images/pono-security.jpg" alt="PONO Security website with bold typography and an orange-on-dark color scheme highlighting professional security services." loading="lazy" />
         </div>
+        </a>
         <div class="work-body">
           <span class="work-tag">Security Services</span>
           <h2 class="work-name">PONO Security</h2>
@@ -785,9 +809,11 @@
 
       <!-- 4. Ride Oahu -->
       <article class="work-card reveal reveal-delay-1">
+        <a href="https://rideoahu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ride Oahu website" style="display:block;">
         <div class="work-image-wrap">
           <img src="portfolio-images/ride-oahu.jpg" alt="Ride Oahu eBike Tour homepage with a hibiscus logo and lifestyle photography of riders on the North Shore of Oahu." loading="lazy" />
         </div>
+        </a>
         <div class="work-body">
           <span class="work-tag">Tourism &amp; Tours</span>
           <h2 class="work-name">Ride Oahu</h2>
