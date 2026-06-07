@@ -262,13 +262,13 @@
 
   /* ── HERO ── */
   #hero {
-    padding-top: calc(var(--nav-h) + 80px);
-    padding-bottom: 0;
-    min-height: 100vh;
+    padding-top: calc(var(--nav-h) + 40px);
+    padding-bottom: 80px;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     background: #04080f;
@@ -293,7 +293,7 @@
   }
   .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     padding: 0 20px;
     max-width: 860px;
@@ -360,63 +360,6 @@
     margin-bottom: 60px;
     animation: heroFadeUp 0.9s 0.2s var(--ease) both;
   }
-  .hero-stats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    flex-wrap: wrap;
-    padding: 28px 40px;
-    background: rgba(255,255,255,0.04);
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-left: 1px solid rgba(255,255,255,0.1);
-    border-right: 1px solid rgba(255,255,255,0.1);
-    border-radius: 24px 24px 0 0;
-    position: relative;
-    z-index: 2;
-    animation: heroFadeUp 0.9s 0.35s var(--ease) both;
-    backdrop-filter: blur(12px);
-  }
-  .hero-stat { text-align: center; }
-  .hero-stat-num {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--white);
-    letter-spacing: -0.04em;
-    display: block;
-  }
-  .hero-stat-num span { color: var(--blue); }
-  .hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.4); font-weight: 500; }
-  .hero-stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.1); }
-
-  /* ── TICKER ── */
-  #ticker-section {
-    background: #111318;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    padding: 18px 0;
-    overflow: hidden;
-  }
-  .ticker-wrap { display: flex; align-items: center; gap: 0; white-space: nowrap; animation: tickerMove 30s linear infinite; }
-  @keyframes tickerMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  .ticker-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 16px;
-    padding: 0 32px;
-    font-family: var(--font-display);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.5);
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  .ticker-item:hover { color: var(--blue); }
-  .ticker-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
-
   /* ── ABOUT INTRO ── */
   #about-intro {
     padding: 100px 0;
@@ -786,6 +729,9 @@
     padding: 100px 0;
     background: var(--black); /* section 4: BLACK */
   }
+  #reviews {
+    padding: 100px 0;
+  }
   .testi-header { text-align: center; margin-bottom: 64px; }
   .testi-header .section-label { color: var(--blue); }
   .testi-header .section-title { color: var(--white); }
@@ -1154,8 +1100,6 @@
     .assessment-inner { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; }
     .footer-grid nav { display: none; }
-    .hero-stats { gap: 24px; padding: 24px 20px; }
-    .hero-stat-divider { display: none; }
     .form-row { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
     .section-title { font-size: 2rem; }
@@ -1195,22 +1139,12 @@
     .assessment-inner { gap: 40px; }
     .VANZA-form { padding: 32px 24px; }
     .modal-box { padding: 32px 24px; border-radius: 20px; }
-    .ticker-item { font-size: 0.85rem; padding: 0 18px; }
   }
 
   /* Phones */
   @media (max-width: 480px) {
     .container { width: 94%; }
     #hero { padding-top: calc(var(--nav-h) + 32px); min-height: auto; }
-    .hero-stats {
-      flex-direction: column;
-      align-items: stretch;
-      padding: 20px 16px;
-      gap: 16px;
-    }
-    .hero-stat { padding: 8px 0; }
-    .hero-stat + .hero-stat { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; }
-    .hero-stat-num { font-size: 1.7rem; }
     .hero-eyebrow { font-size: 0.72rem; padding: 6px 14px; }
     #about-intro, #services, #portfolio, #industries, #testimonials, #reviews, #assessment, #contact-cta {
       padding: 56px 0;
@@ -1347,11 +1281,11 @@
         VANZA<span>.</span>
       </a>
       <ul class="nav-links" role="list">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="insights.html">Insights</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="industries">Industries</a></li>
+        <li><a href="portfolio">Portfolio</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="insights">Insights</a></li>
         <li><a href="#assessment">Contact</a></li>
       </ul>
       <div class="nav-cta">
@@ -1370,11 +1304,11 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-  <a href="services.html" onclick="closeMobile()">Services</a>
-  <a href="industries.html" onclick="closeMobile()">Industries</a>
-  <a href="portfolio.html" onclick="closeMobile()">Portfolio</a>
-  <a href="about.html" onclick="closeMobile()">About</a>
-  <a href="insights.html" onclick="closeMobile()">Insights</a>
+  <a href="services" onclick="closeMobile()">Services</a>
+  <a href="industries" onclick="closeMobile()">Industries</a>
+  <a href="portfolio" onclick="closeMobile()">Portfolio</a>
+  <a href="about" onclick="closeMobile()">About</a>
+  <a href="insights" onclick="closeMobile()">Insights</a>
   <a href="#assessment" onclick="closeMobile()">Contact</a>
   <a href="tel:+16198570501">(619) 857-0501</a>
   <button class="btn-primary" onclick="closeMobile(); openModal();" style="width:100%; justify-content:center; font-size:1rem;">Get A Quote</button>
@@ -1391,7 +1325,7 @@
       Grow Fast.
     </h1>
     <p class="hero-subtitle">
-      VANZA Marketing helps small businesses across the US get seen online, build high-converting websites, and grow revenue through SEO, paid ads, and content strategy.
+      VANZA Marketing helps businesses across the US get seen online, build high-converting websites, and grow revenue through SEO, paid ads, and content strategy.
     </p>
     <div class="hero-actions">
       <button class="btn-primary" onclick="openModal()">
@@ -1399,63 +1333,6 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
     </div>
-  </div>
-  <div class="hero-stats container">
-    <div class="hero-stat">
-      <span class="hero-stat-num">5<span>★</span></span>
-      <span class="hero-stat-label">Average Rating</span>
-    </div>
-    <div class="hero-stat-divider" aria-hidden="true"></div>
-    <div class="hero-stat">
-      <span class="hero-stat-num">500<span>+</span></span>
-      <span class="hero-stat-label">Clients Served</span>
-    </div>
-    <div class="hero-stat-divider" aria-hidden="true"></div>
-    <div class="hero-stat">
-      <span class="hero-stat-num">3<span>x</span></span>
-      <span class="hero-stat-label">Avg. Lead Growth</span>
-    </div>
-    <div class="hero-stat-divider" aria-hidden="true"></div>
-    <div class="hero-stat">
-      <span class="hero-stat-num">15<span>+</span></span>
-      <span class="hero-stat-label">Industries Served</span>
-    </div>
-  </div>
-</section>
-
-<!-- TICKER -->
-<section id="ticker-section" aria-label="Industries we serve">
-  <div class="ticker-wrap" aria-hidden="true">
-    <!-- doubled for seamless loop -->
-    <span class="ticker-item"><span class="ticker-dot"></span>Contractors</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Electricians</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Architects</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>CPAs</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Accountants</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Roofers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Plumbers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Tax Preparers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Financial Services</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Interior Designers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Bookkeepers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Home Services</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Care Homes</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Landscapers</span>
-    <!-- repeat -->
-    <span class="ticker-item"><span class="ticker-dot"></span>Contractors</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Electricians</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Architects</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>CPAs</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Accountants</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Roofers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Plumbers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Tax Preparers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Financial Services</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Interior Designers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Bookkeepers</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Home Services</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Care Homes</span>
-    <span class="ticker-item"><span class="ticker-dot"></span>Landscapers</span>
   </div>
 </section>
 
@@ -1474,7 +1351,7 @@
         </p>
         <div style="margin-top:32px; display:flex; gap:14px; flex-wrap:wrap;">
           <button class="btn-primary" onclick="openModal()">Start Today</button>
-          <a href="portfolio.html" class="btn-outline">See Our Work</a>
+          <a href="portfolio" class="btn-outline">See Our Work</a>
         </div>
       </div>
       <div class="about-badge-grid reveal reveal-delay-1">
@@ -1563,7 +1440,7 @@
         Get a Free Consultation
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
-      <a href="portfolio.html" class="btn-outline">See Our Work</a>
+      <a href="portfolio" class="btn-outline">See Our Work</a>
     </div>
   </div>
 </section>
@@ -1705,7 +1582,7 @@
           <div class="testi-avatar" aria-hidden="true">GA</div>
           <div>
             <div class="testi-name">Grace A.</div>
-            <div class="testi-title-sub">CEO, Ride Oahu</div>
+            <div class="testi-title-sub">Ride Oahu</div>
           </div>
         </div>
       </article>
@@ -1719,7 +1596,7 @@
           <div class="testi-avatar" aria-hidden="true">SC</div>
           <div>
             <div class="testi-name">Shane Connor</div>
-            <div class="testi-title-sub">CEO, Local Junk Man</div>
+            <div class="testi-title-sub">Local Junk Man</div>
           </div>
         </div>
       </article>
@@ -1728,54 +1605,12 @@
         <div class="testi-stars" aria-label="5 out of 5 stars">
           <div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div>
         </div>
-        <p class="testi-body">"Straightforward, no fluff, and they actually deliver. Our content strategy was a mess before — now it's consistent and driving real leads. I've referred three other business owners to VANZA already."</p>
+        <p class="testi-body">"Straightforward, no fluff, and they actually deliver. Our online presence was a mess before — now it's consistent and driving real leads. I've referred three other business owners to VANZA already."</p>
         <div class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">DR</div>
+          <div class="testi-avatar" aria-hidden="true">CS</div>
           <div>
-            <div class="testi-name">Diana R.</div>
-            <div class="testi-title-sub">Owner, Coastal Home Staging</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="testi-card reveal reveal-delay-1">
-        <div class="testi-stars" aria-label="5 out of 5 stars">
-          <div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div>
-        </div>
-        <p class="testi-body">"I've worked with three other agencies and none of them came close to what VANZA delivered. Within 60 days our website traffic doubled and we were getting inbound calls we never had before. Game changer."</p>
-        <div class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">MB</div>
-          <div>
-            <div class="testi-name">Mike B.</div>
-            <div class="testi-title-sub">Owner, Pacific Roofing Solutions</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="testi-card reveal">
-        <div class="testi-stars" aria-label="5 out of 5 stars">
-          <div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div>
-        </div>
-        <p class="testi-body">"The paid advertising campaign they ran for us generated more qualified leads in one month than we had all of the previous year. VANZA knows how to connect strategy with real results — not just impressions."</p>
-        <div class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">KT</div>
-          <div>
-            <div class="testi-name">Karen T.</div>
-            <div class="testi-title-sub">Owner, Sunrise Wellness Studio</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="testi-card reveal reveal-delay-1">
-        <div class="testi-stars" aria-label="5 out of 5 stars">
-          <div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div><div class="testi-star"></div>
-        </div>
-        <p class="testi-body">"Our old site looked dated and barely converted. VANZA rebuilt it from the ground up — clean, fast, and mobile-friendly — and within weeks we were getting more form fills and calls than we'd seen in years. Worth every dollar."</p>
-        <div class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">JM</div>
-          <div>
-            <div class="testi-name">Jordan M.</div>
-            <div class="testi-title-sub">Owner, Harbor Auto Detailing</div>
+            <div class="testi-name">Cody Savage</div>
+            <div class="testi-title-sub">Savage Painting</div>
           </div>
         </div>
       </article>
@@ -1918,12 +1753,12 @@
         <div class="footer-col">
           <h3>Navigation</h3>
           <ul>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="industries.html">Industries</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="insights.html">Insights</a></li>
-            <li><a href="index.html#assessment">Contact</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="industries">Industries</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="insights">Insights</a></li>
+            <li><a href="index#assessment">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -1932,11 +1767,11 @@
           <h3>Resources</h3>
           <ul>
             <li><a href="#assessment">Free Assessment</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about">About</a></li>
             <li><a href="#how-it-works">Our Process</a></li>
             <li><a href="#" onclick="openModal()">Get A Quote</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy">Privacy Policy</a></li>
+            <li><a href="terms">Terms of Service</a></li>
           </ul>
         </div>
       </nav>
@@ -1945,8 +1780,8 @@
     <div class="footer-bottom">
       <p>&copy; <span id="copy-year">2025</span> VANZA Marketing. All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="privacy">Privacy</a>
+        <a href="terms">Terms</a>
         <a href="#" onclick="openModal()">Contact</a>
       </div>
     </div>
@@ -1967,29 +1802,29 @@
     <div id="modal-form">
       <div class="form-row">
         <div class="form-group">
-          <label for="m-name">Name *</label>
-          <input type="text" id="m-name" placeholder="Your name" autocomplete="name" />
+          <label for="m-name">Your Name *</label>
+          <input type="text" id="m-name" placeholder="John Smith" autocomplete="name" required />
         </div>
         <div class="form-group">
           <label for="m-biz">Business Name *</label>
-          <input type="text" id="m-biz" placeholder="Your business" />
+          <input type="text" id="m-biz" placeholder="Smith Contracting" required />
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label for="m-email">Email *</label>
-          <input type="email" id="m-email" placeholder="you@company.com" autocomplete="email" />
+          <label for="m-email">Email Address *</label>
+          <input type="email" id="m-email" placeholder="john@yourcompany.com" autocomplete="email" required />
         </div>
         <div class="form-group">
-          <label for="m-phone">Phone *</label>
-          <input type="tel" id="m-phone" placeholder="(555) 000-0000" autocomplete="tel" />
+          <label for="m-phone">Phone Number *</label>
+          <input type="tel" id="m-phone" placeholder="(619) 555-0100" autocomplete="tel" required />
         </div>
       </div>
       <div class="form-group">
-        <label for="m-msg">What are you looking for?</label>
-        <textarea id="m-msg" placeholder="Describe your project or goals..." style="min-height:80px;"></textarea>
+        <label for="m-msg">Describe Your Goals (optional)</label>
+        <textarea id="m-msg" placeholder="Tell us about your business and what you're hoping to achieve..." style="min-height:80px;"></textarea>
       </div>
-      <button class="form-submit" onclick="submitModal()">Send Message →</button>
+      <button class="form-submit" onclick="submitModal()">Send My Free Assessment Request →</button>
     </div>
     <div class="form-success" id="modal-success" role="alert">
       <div class="form-success-icon" aria-hidden="true">
@@ -2047,17 +1882,89 @@
   /* form submit */
   function submitForm() {
     const name = document.getElementById('f-name').value.trim();
+    const biz = document.getElementById('f-biz').value.trim();
     const email = document.getElementById('f-email').value.trim();
-    if (!name || !email) { alert('Please fill in your name and email to continue.'); return; }
-    document.getElementById('form-fields').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
+    const phone = document.getElementById('f-phone').value.trim();
+    const msg = document.getElementById('f-message').value.trim();
+    if (!name || !biz || !email || !phone) { alert('Please fill in name, business, email, and phone to continue.'); return; }
+    const btn = document.querySelector('.VANZA-form .form-submit');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: '0d83c50b-e019-4a2d-ab64-e8dd833deaa2',
+        subject: 'New Free Assessment Request from VANZA Marketing Website',
+        from_name: 'VANZA Marketing Website',
+        name: name,
+        business: biz,
+        email: email,
+        phone: phone,
+        message: msg || '(none)',
+        botcheck: ''
+      })
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById('form-fields').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again or email us directly at sales@vanzamarketing.com');
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+    })
+    .catch(err => {
+      alert('Network error. Please try again or email us directly at sales@vanzamarketing.com');
+      btn.textContent = originalText;
+      btn.disabled = false;
+    });
   }
   function submitModal() {
     const name = document.getElementById('m-name').value.trim();
+    const biz = document.getElementById('m-biz').value.trim();
     const email = document.getElementById('m-email').value.trim();
-    if (!name || !email) { alert('Please fill in your name and email to continue.'); return; }
-    document.getElementById('modal-form').style.display = 'none';
-    document.getElementById('modal-success').style.display = 'block';
+    const phone = document.getElementById('m-phone').value.trim();
+    const msg = document.getElementById('m-msg').value.trim();
+    if (!name || !email || !biz || !phone) { alert('Please fill in your name, business, email and phone to continue.'); return; }
+    const btn = document.querySelector('#modal-form .form-submit');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: '0d83c50b-e019-4a2d-ab64-e8dd833deaa2',
+        subject: 'New Quote Request from VANZA Marketing Website',
+        from_name: 'VANZA Marketing Website',
+        name: name,
+        business: biz,
+        email: email,
+        phone: phone,
+        message: msg || '(none)',
+        botcheck: ''
+      })
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById('modal-form').style.display = 'none';
+        document.getElementById('modal-success').style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again or email us directly at sales@vanzamarketing.com');
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+    })
+    .catch(err => {
+      alert('Network error. Please try again or email us directly at sales@vanzamarketing.com');
+      btn.textContent = originalText;
+      btn.disabled = false;
+    });
   }
 
   /* intersection observer for reveals */
