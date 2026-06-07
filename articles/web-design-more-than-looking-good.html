@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="A successful business website should be clear, fast, mobile-friendly, easy to use, and built to help visitors take action — not just look good." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Why Web Design Is About More Than Looking Good" />
+<meta property="og:description" content="A successful business website should be clear, fast, mobile-friendly, easy to use, and built to help visitors take action — not just look good." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vanzomarketing.com/articles/web-design-more-than-looking-good.html" />
+<meta property="og:image" content="https://vanzamarketing.com/articles/images/web-design-article.jpg" />
+<meta property="og:image:alt" content="VANZA Marketing — Digital Marketing for Small Businesses" />
+<meta property="og:site_name" content="VANZA Marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Why Web Design Is About More Than Looking Good" />
+<meta name="twitter:description" content="A successful business website should be clear, fast, mobile-friendly, easy to use, and built to help visitors take action — not just look good." />
+<meta name="twitter:image" content="https://vanzamarketing.com/articles/images/web-design-article.jpg" />
+<meta property="article:published_time" content="2024-04-04" />
+<link rel="canonical" href="https://vanzomarketing.com/articles/web-design-more-than-looking-good.html" />
+<title>Why Web Design Is About More Than Looking Good</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap');
+</style>
+
+<!-- Article structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Web Design Is About More Than Looking Good",
+  "description": "A successful business website should be clear, fast, mobile-friendly, easy to use, and built to help visitors take action — not just look good.",
+  "datePublished": "2024-04-04",
+  "author": {
+    "@type": "Organization",
+    "name": "VANZA Marketing"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "VANZA Marketing"
+  },
+  "mainEntityOfPage": "https://vanzomarketing.com/articles/web-design-more-than-looking-good.html"
+}
+</script>
+
+<style>
+  /* ── DESIGN TOKENS ── */
+  :root {
+    --black: #0a0a0b;
+    --white: #ffffff;
+    --off-white: #f6f7f9;
+    --blue: #4FC3FF;
+    --blue-dim: rgba(79,195,255,0.12);
+    --blue-glow: rgba(79,195,255,0.25);
+    --blue-dark: #1a9fd4;
+    --gray-100: #f0f1f5;
+    --gray-200: #e2e4ec;
+    --gray-400: #a0a6b8;
+    --gray-600: #5c6275;
+    --gray-800: #2a2d38;
+    --dark2: #0d1117;
+    --font-display: 'Geist', 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --nav-h: 80px;
+    --max-w: 1200px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* ── RESET ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.75);
+    background: var(--black);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  button { font-family: var(--font-body); cursor: pointer; border: none; background: none; }
+
+  /* ── UTILITIES ── */
+  .container { width: 90%; max-width: var(--max-w); margin: 0 auto; }
+  .blue { color: var(--blue); }
+
+  /* ── BUTTONS ── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--blue);
+    color: var(--black);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 12px 22px;
+    border-radius: 999px;
+    transition: all 0.25s var(--ease);
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover { background: #7fd6ff; transform: translateY(-1px); box-shadow: 0 12px 32px var(--blue-glow); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.92rem;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    transition: all 0.25s var(--ease);
+    cursor: pointer;
+  }
+  .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+
+  /* ── NAV ── */
+  nav#nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(10,10,11,0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s var(--ease);
+  }
+  nav#nav.scrolled {
+    background: rgba(10,10,11,0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-color: rgba(255,255,255,0.08);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--nav-h);
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: -0.02em;
+    color: var(--white);
+  }
+  .nav-logo span { color: var(--blue); }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    transition: color 0.2s;
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-links a.active { color: var(--white); }
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -8px;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 2px;
+  }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.92rem;
+    font-weight: 500;
+  }
+  .nav-phone:hover { color: var(--blue); }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.25s;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    background: rgba(10,10,11,0.98);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 32px;
+    z-index: 99;
+    transform: translateY(-110%);
+    transition: transform 0.4s var(--ease);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .mobile-menu.open { transform: translateY(0); }
+  .mobile-menu a {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* ── ARTICLE LAYOUT ── */
+  #article-hero {
+    padding: calc(var(--nav-h) + 80px) 0 0;
+    background: var(--black);
+  }
+  .article-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 28px;
+    transition: all 0.2s;
+  }
+  .article-back:hover { color: var(--blue); gap: 12px; }
+  .article-back svg { width: 14px; height: 14px; }
+  .article-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+  }
+  .article-meta-topic {
+    color: var(--blue);
+    background: var(--blue-dim);
+    border: 1px solid rgba(79,195,255,0.25);
+    padding: 7px 16px;
+    border-radius: 999px;
+  }
+  .article-meta-date { color: rgba(255,255,255,0.5); }
+  .article-meta-read { color: rgba(255,255,255,0.5); }
+  .article-meta-sep { color: rgba(255,255,255,0.25); }
+  .article-title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    max-width: 880px;
+    margin-bottom: 48px;
+  }
+  .article-hero-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 24px;
+    background: var(--dark2);
+    border: 1px solid rgba(255,255,255,0.06);
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .article-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #article-body {
+    padding: 64px 0 80px;
+    background: var(--black);
+  }
+  .article-content {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.78);
+  }
+  .article-content p { margin-bottom: 22px; }
+  .article-content p.lead {
+    font-size: 1.22rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 26px;
+  }
+  .article-content p.lead:first-of-type::first-letter {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1;
+    float: left;
+    margin: 6px 14px 0 0;
+    color: var(--blue);
+  }
+  .article-content h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.65rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    margin: 56px 0 18px;
+  }
+  .article-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 26px;
+  }
+  .article-content ul li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.78);
+  }
+  .article-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 4px; top: 12px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 0 4px rgba(79,195,255,0.12);
+  }
+
+  /* ── ARTICLE FOOTER CTA ── */
+  .article-end-cta {
+    max-width: 720px;
+    margin: 64px auto 0;
+    padding: 36px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(79,195,255,0.08), rgba(79,195,255,0.02));
+    border: 1px solid rgba(79,195,255,0.18);
+    text-align: center;
+  }
+  .article-end-cta h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .article-end-cta p {
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 22px;
+    font-size: 0.98rem;
+  }
+  .article-end-cta .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* ── FOOTER ── */
+  footer#footer {
+    padding: 64px 0 32px;
+    background: #060709;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 56px;
+    margin-bottom: 48px;
+  }
+  .footer-brand .nav-logo { font-size: 1.6rem; margin-bottom: 16px; display: inline-block; }
+  .footer-brand p { font-size: 0.92rem; color: rgba(255,255,255,0.55); line-height: 1.65; margin-bottom: 24px; max-width: 320px; }
+  .footer-contact { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .footer-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.6);
+    transition: color 0.2s;
+  }
+  .footer-contact a:hover { color: var(--blue); }
+  .footer-contact svg { width: 14px; height: 14px; flex-shrink: 0; }
+  .footer-social { display: flex; gap: 10px; }
+  .social-btn {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.7);
+    transition: all 0.25s;
+  }
+  .social-btn:hover { background: var(--blue); color: var(--black); border-color: var(--blue); }
+  .social-btn svg { width: 16px; height: 16px; }
+  .footer-col h3 {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--white);
+    margin-bottom: 18px;
+  }
+  .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a { font-size: 0.9rem; color: rgba(255,255,255,0.55); transition: color 0.2s; }
+  .footer-col a:hover { color: var(--blue); }
+  .footer-bottom {
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+  }
+  .footer-bottom-links { display: flex; gap: 22px; }
+  .footer-bottom-links a:hover { color: var(--blue); }
+
+  /* ── SCROLL TOP ── */
+  #scroll-top {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--blue);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: all 0.3s var(--ease);
+    box-shadow: 0 12px 32px var(--blue-glow);
+  }
+  #scroll-top.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+  #scroll-top svg { color: var(--black); width: 20px; height: 20px; }
+  #scroll-top:hover { background: #7fd6ff; }
+
+  /* ── MODAL ── */
+  #modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  #modal-overlay.open { opacity: 1; pointer-events: all; }
+  .modal-box {
+    background: #0f1117;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s var(--ease);
+  }
+  #modal-overlay.open .modal-box { transform: scale(1); }
+  .modal-close {
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .modal-close:hover { background: rgba(255,255,255,0.12); color: var(--white); }
+  .modal-box h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .modal-box p { font-size: 0.95rem; color: rgba(255,255,255,0.6); margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+  .form-group label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); }
+  .form-group input,
+  .form-group textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.92rem;
+    color: var(--white);
+    font-family: var(--font-body);
+    transition: all 0.2s;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    background: rgba(79,195,255,0.04);
+  }
+  .form-submit {
+    width: 100%;
+    background: var(--blue);
+    color: var(--black);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 14px;
+    border-radius: 12px;
+    transition: all 0.25s;
+    margin-top: 8px;
+  }
+  .form-submit:hover { background: #7fd6ff; transform: translateY(-1px); }
+  .form-success { display: none; text-align: center; padding: 20px 0; }
+  .form-success-icon {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background: rgba(79,195,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    color: var(--blue);
+  }
+  .form-success-icon svg { width: 28px; height: 28px; }
+  .form-success h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .form-success p { font-size: 0.92rem; color: rgba(255,255,255,0.6); margin-bottom: 0; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .nav-links, .nav-phone { display: none; }
+    .hamburger { display: flex; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+    nav[aria-label="Navigation"] { display: none; }
+    #article-hero { padding: calc(var(--nav-h) + 56px) 0 0; }
+    .article-title { margin-bottom: 36px; }
+  }
+  @media (max-width: 800px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+    .footer-grid nav { display: none; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .form-row { grid-template-columns: 1fr; }
+    .modal-box { padding: 32px 24px; border-radius: 20px; }
+    .container { width: 92%; }
+    .article-content { font-size: 1.02rem; }
+    .article-content h2 { font-size: 1.4rem; margin: 44px 0 14px; }
+    .article-end-cta { padding: 28px 24px; }
+  }
+  @media (max-width: 480px) {
+    .container { width: 94%; }
+    #article-hero { padding: calc(var(--nav-h) + 36px) 0 0; }
+    #article-body { padding: 44px 0 60px; }
+    .article-meta-row { font-size: 0.7rem; gap: 10px; }
+    .article-content p.lead { font-size: 1.08rem; }
+    .article-content p.lead:first-of-type::first-letter { font-size: 2.6rem; }
+    .article-hero-image { border-radius: 16px; }
+    .modal-box { padding: 28px 20px; border-radius: 18px; }
+    .modal-box h2 { font-size: 1.25rem; }
+    .mobile-menu { padding: 24px; }
+    .mobile-menu a { font-size: 1.2rem; padding: 10px 0; }
+    .footer-bottom { gap: 12px; font-size: 0.8rem; }
+    .form-group input,
+    .form-group textarea { font-size: 16px; }
+    .article-end-cta .cta-buttons .btn-primary,
+    .article-end-cta .cta-buttons .btn-outline { width: 100%; justify-content: center; }
+  }
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#0a0a0b" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index" class="nav-logo" aria-label="VANZA Marketing home">
+        VANZA<span>.</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../services">Services</a></li>
+        <li><a href="../industries">Industries</a></li>
+        <li><a href="../portfolio">Portfolio</a></li>
+        <li><a href="../about">About</a></li>
+        <li><a href="../insights" class="active">Insights</a></li>
+        <li><a href="../index#assessment">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+16198570501" class="nav-phone" aria-label="Call VANZA Marketing">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15l-.08.92z"/></svg>
+          (619) 857-0501
+        </a>
+        <button class="btn-primary" onclick="openModal()" aria-label="Get a free quote">Get A Quote</button>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="../services" onclick="closeMobile()">Services</a>
+  <a href="../industries" onclick="closeMobile()">Industries</a>
+  <a href="../portfolio" onclick="closeMobile()">Portfolio</a>
+  <a href="../about" onclick="closeMobile()">About</a>
+  <a href="../insights" onclick="closeMobile()">Insights</a>
+  <a href="../index#assessment" onclick="closeMobile()">Contact</a>
+  <a href="tel:+16198570501">(619) 857-0501</a>
+  <button class="btn-primary" onclick="closeMobile(); openModal();" style="width:100%; justify-content:center; font-size:1rem;">Get A Quote</button>
+</div>
+
+<main>
+
+<!-- ARTICLE HERO -->
+<section id="article-hero" aria-labelledby="article-title">
+  <div class="container">
+    <a href="../insights" class="article-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      All articles
+    </a>
+    <div class="article-meta-row">
+      <span class="article-meta-topic"><a href="../services#websites">WEB DESIGN</a></span>
+      <time class="article-meta-date" datetime="2024-04-04">April 4, 2024</time>
+      <span class="article-meta-sep">·</span>
+      <span class="article-meta-read">5 min read</span>
+    </div>
+    <h1 class="article-title" id="article-title">Why Web Design Is About More Than Looking Good</h1>
+    <div class="article-hero-image">
+      <img src="images/web-design-article.jpg" alt="Why Web Design Is About More Than Looking Good" />
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<section id="article-body">
+  <div class="container">
+    <div class="article-content">
+      <p class="lead">A professional website should look good, but appearance is only one part of strong web design. A successful business website should also be clear, fast, mobile-friendly, easy to use, and built to help visitors take action.</p>
+      <p class="lead">Many small businesses think web design is mainly about colors, images, and layout. Those things matter, but the real goal is to create a website that supports business growth.</p>
+      <p class="lead">Good web design helps people understand your business, trust your services, and contact you with confidence.</p>
+      <h2>Clear Design Helps Customers Understand You</h2>
+      <p>When someone lands on your website, they should quickly understand what your business does. If the website is confusing, cluttered, or vague, visitors may leave before they ever contact you.</p>
+      <p>A strong website should clearly explain:</p>
+      <ul>
+        <li>Who you are</li>
+        <li>What services you offer</li>
+        <li>Where you operate</li>
+        <li>Who you help</li>
+        <li>Why customers should choose you</li>
+        <li>How to contact you</li>
+      </ul>
+      <p>Clear web design removes confusion. It helps visitors move through the website naturally and find the information they need.</p>
+      <h2>Mobile-Friendly Design Is Essential</h2>
+      <p>Most people browse websites from their phones. If your website does not work well on mobile, you may be losing customers.</p>
+      <p>A mobile-friendly website should be easy to read, easy to scroll, and easy to contact from. Buttons should be simple to tap. Phone numbers should be clickable. Contact forms should be short and clear.</p>
+      <p>For local businesses, mobile web design is even more important because many customers are searching while they are ready to act. They may want to call, get directions, book a service, or request a quote quickly.</p>
+      <p>If your website makes that difficult, they may choose another business.</p>
+      <h2>Fast Websites Create Better Experiences</h2>
+      <p>Website speed matters. A slow website can frustrate visitors and cause them to leave. It can also affect SEO performance because search engines want to show users helpful, fast-loading websites.</p>
+      <p>A fast website feels more professional. It helps customers move through your pages without delay.</p>
+      <p>Good website development should include optimized images, clean code, simple layouts, and reliable hosting. These technical details may not be obvious to visitors, but they affect how the website feels and performs.</p>
+      <h2>Every Page Should Have a Purpose</h2>
+      <p>A strong business website should not have random pages. Every page should serve a clear purpose.</p>
+      <p>The homepage should introduce the business. Service pages should explain what you offer. Portfolio or case study pages should show proof. Review sections should build trust. Contact pages should make it easy to reach out.</p>
+      <p>When every page has a purpose, the website becomes easier to use and more effective as a sales tool.</p>
+      <h2>Design Should Support SEO</h2>
+      <p>Web design and SEO are connected. Search engines need to understand your website structure, content, and services. Visitors need the same thing.</p>
+      <p>A website designed for SEO should use clear headings, organized sections, helpful content, internal links, service pages, and proper page titles.</p>
+      <p>Good design makes the content easier to read. Good SEO makes the website easier to find. Together, they create a stronger online presence.</p>
+      <h2>Conclusion</h2>
+      <p>Web design is about more than making a website look nice. It is about creating a professional online experience that helps customers trust your business and take action.</p>
+      <p>A strong website should be clear, mobile-friendly, fast, organized, and built with SEO in mind. When design and strategy work together, your website becomes more than a digital brochure. It becomes a tool for business growth.</p>
+      <div class="article-end-cta">
+        <h3>Want help with this for your business?</h3>
+        <p>We help small businesses build websites and SEO systems that bring in real leads. Let's talk about what you're trying to grow.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary" onclick="openModal()">Get A Free Assessment</button>
+          <a href="../insights" class="btn-outline">Read More Articles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">VANZA<span style="color:var(--blue)">.</span></div>
+        <p>VANZA Marketing connects strategy, content, and advertising so businesses can get seen, attract attention, and turn that attention into real revenue.</p>
+        <div class="footer-contact" aria-label="Contact information">
+          <a href="tel:+16198570501" aria-label="Call us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15l-.08.92z"/></svg>
+            (619) 857-0501
+          </a>
+          <a href="mailto:sales@vanzamarketing.com" aria-label="Email us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            sales@vanzamarketing.com
+          </a>
+          <a href="#" aria-label="Our office address">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San Diego, CA
+          </a>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+          <a class="social-btn" href="https://www.facebook.com/share/1Bdb8GV7ik/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="VANZA Marketing on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.instagram.com/vanzamarketing/" target="_blank" rel="noopener noreferrer" aria-label="VANZA Marketing on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/company/vanzamarketing/about/" target="_blank" rel="noopener noreferrer" aria-label="VANZA Marketing on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-label="Navigation">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="../services">Services</a></li>
+            <li><a href="../industries">Industries</a></li>
+            <li><a href="../portfolio">Portfolio</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../insights">Insights</a></li>
+            <li><a href="../index#assessment">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav aria-label="Resources">
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="../index#assessment">Free Assessment</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../insights">Insights</a></li>
+            <li><a href="../portfolio">Portfolio</a></li>
+            <li><a href="#" onclick="openModal()">Get A Quote</a></li>
+            <li><a href="../privacy">Privacy Policy</a></li>
+            <li><a href="../terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copy-year">2025</span> VANZA Marketing. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="../privacy">Privacy</a>
+        <a href="../terms">Terms</a>
+        <a href="#" onclick="openModal()">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TOP -->
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- MODAL -->
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeModalOutside(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&#10005;</button>
+    <h2 id="modal-title">Get A Quote</h2>
+    <p>Tell us about your business and what you're looking to achieve. We'll reach out within 1 business day.</p>
+    <div id="modal-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="m-name">Your Name *</label>
+          <input type="text" id="m-name" placeholder="John Smith" autocomplete="name" required />
+        </div>
+        <div class="form-group">
+          <label for="m-biz">Business Name *</label>
+          <input type="text" id="m-biz" placeholder="Smith Contracting" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="m-email">Email Address *</label>
+          <input type="email" id="m-email" placeholder="john@yourcompany.com" autocomplete="email" required />
+        </div>
+        <div class="form-group">
+          <label for="m-phone">Phone Number *</label>
+          <input type="tel" id="m-phone" placeholder="(619) 555-0100" autocomplete="tel" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="m-msg">Describe Your Goals (optional)</label>
+        <textarea id="m-msg" placeholder="Tell us about your business and what you're hoping to achieve..." style="min-height:80px;"></textarea>
+      </div>
+      <button class="form-submit" onclick="submitModal()">Send My Free Assessment Request →</button>
+    </div>
+    <div class="form-success" id="modal-success" role="alert">
+      <div class="form-success-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thank you! A VANZA Marketing specialist will be in touch with you shortly.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('copy-year').textContent = new Date().getFullYear();
+  const nav = document.getElementById('nav');
+  const scrollTopBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let menuOpen = false;
+  hamburger.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+    hamburger.setAttribute('aria-expanded', menuOpen);
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+  });
+  function closeMobile() {
+    menuOpen = false;
+    mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    document.body.style.overflow = '';
+  }
+  function openModal() {
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  function submitModal() {
+    const name = document.getElementById('m-name').value.trim();
+    const biz = document.getElementById('m-biz').value.trim();
+    const email = document.getElementById('m-email').value.trim();
+    const phone = document.getElementById('m-phone').value.trim();
+    const msg = document.getElementById('m-msg').value.trim();
+    if (!name || !email || !biz || !phone) { alert('Please fill in your name, business, email and phone to continue.'); return; }
+    const btn = document.querySelector('#modal-form .form-submit');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: '0d83c50b-e019-4a2d-ab64-e8dd833deaa2',
+        subject: 'New Quote Request from VANZA Marketing Website',
+        from_name: 'VANZA Marketing Website',
+        name: name,
+        business: biz,
+        email: email,
+        phone: phone,
+        message: msg || '(none)',
+        botcheck: ''
+      })
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById('modal-form').style.display = 'none';
+        document.getElementById('modal-success').style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again or email us directly at sales@vanzamarketing.com');
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+    })
+    .catch(err => {
+      alert('Network error. Please try again or email us directly at sales@vanzamarketing.com');
+      btn.textContent = originalText;
+      btn.disabled = false;
+    });
+  }
+</script>
+
+</body>
+</html>
