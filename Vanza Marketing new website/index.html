@@ -1,0 +1,215 @@
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LX9XLJWED8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LX9XLJWED8');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Website Design &amp; Development for Businesses | Vanza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#f5f1e8">
+<meta name="description" content="Vanza designs and develops custom websites for businesses that need a stronger digital presence. Strategic design, development, SEO, and ongoing support built around your business.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vanza">
+<meta property="og:title" content="Custom Website Design &amp; Development for Businesses | Vanza">
+<meta property="og:description" content="Vanza designs and develops custom websites for businesses that need a stronger digital presence. Strategic design, development, SEO, and ongoing support built around your business.">
+<meta property="og:image" content="https://vanzamarketing.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://vanzamarketing.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Custom Website Design &amp; Development for Businesses | Vanza">
+<meta name="twitter:description" content="Vanza designs and develops custom websites for businesses that need a stronger digital presence. Strategic design, development, SEO, and ongoing support built around your business.">
+<meta name="twitter:image" content="https://vanzamarketing.com/og-image.jpg">
+<link rel="stylesheet" href="vanza.css">
+
+<!-- NAV -->
+<input type="checkbox" id="navtoggle" class="navtoggle" hidden>
+<nav class="nav"><div class="nav__inner">
+  <a href="index.html" class="nav__brand">VANZA<span class="dot">.</span></a>
+  <div class="nav__right">
+    <a class="btn nav__cta" href="contact.html">Build with us</a>
+    <label for="navtoggle" class="navburger" aria-label="Open menu"><span></span><span></span><span></span></label>
+  </div>
+</div></nav>
+<div class="navmenu">
+  <label for="navtoggle" class="navclose" aria-label="Close menu">✕</label>
+  <a class="mlink" href="work.html">Work</a>
+  <a class="mlink" href="services.html">Services</a>
+  <a class="mlink" href="insights.html">Insights</a>
+  <a class="mlink" href="about.html">About</a>
+  <a class="mlink" href="contact.html">Contact</a>
+  <div class="navmenu__contact">Get in touch<a href="mailto:sales@vanzamarketing.com">sales@vanzamarketing.com</a></div>
+</div>
+
+<main>
+<!-- HERO -->
+<header class="hero">
+  <div class="herobg">
+    <video class="hb" autoplay muted playsinline></video>
+    <video class="hb" autoplay muted playsinline></video>
+  </div>
+  <div class="container">
+    <span class="eyebrow hero__eyebrow">Vanza Marketing</span>
+    <h1 class="hero__title">We build websites for businesses <span class="hl">that build things.</span></h1>
+    <p class="lead hero__sub">Websites designed around your business, your customers, and where you&apos;re headed.</p>
+  </div>
+  <script>
+  (function(){
+    // Four clean single-scene clips (no morphs → nothing warps). Simple crossfade dissolve between them.
+    var B="https://d8j0ntlcm91z4.cloudfront.net/user_3GT3GxbIu9FFqweSzbEFDHtavQd/";
+    var clips=[
+      B+"hf_20260823_024507_11bf371d-083a-4abf-a885-a279e1813363.mp4", // concrete pour
+      B+"hf_20260823_024507_817a1b1a-80c8-45d3-b093-4be1fe8a0522.mp4", // hammer
+      B+"hf_20260823_024507_ffc6778c-92da-4603-ae34-efbe10fbeb6b.mp4", // painter
+      B+"hf_20260823_024507_7eb812ef-ee75-42f7-81ef-17211a72cfb4.mp4"  // junk removal
+    ];
+    var els=document.querySelectorAll(".herobg .hb");
+    var showIdx=0, i=0, busy=false;
+    function start(el, idx){ el.src=clips[idx]; var p=el.play(); if(p&&p.catch){ p.catch(function(){}); } }
+    function tick(){
+      if(busy) return;
+      var cur=els[showIdx];
+      if(cur.readyState>=2 && cur.duration && cur.currentTime >= cur.duration - 1.3){
+        busy=true;
+        var ni=(i+1)%clips.length;
+        var inc=els[1-showIdx];
+        inc.src=clips[ni];
+        inc.addEventListener("loadeddata", function h(){
+          inc.removeEventListener("loadeddata", h);
+          try{ inc.currentTime=0; }catch(e){}
+          var p=inc.play(); if(p&&p.catch){ p.catch(function(){}); }
+          inc.classList.add("on");
+          cur.classList.remove("on");
+          showIdx=1-showIdx; i=ni;
+          setTimeout(function(){ busy=false; }, 1400);
+        });
+        inc.load();
+      }
+    }
+    start(els[0], 0); els[0].classList.add("on");
+    setInterval(tick, 120);
+  })();
+  </script>
+</header>
+
+<!-- 2 · IDENTITY -->
+<section class="section sec-clip" id="identity"><div class="container">
+  <h2 class="statement statement--xl reveal" style="max-width:14ch">Your business is serious. Your website should be too.</h2>
+  <div class="editorial" style="margin-top:var(--space-10)">
+    <p class="lede reveal rv-r" style="transition-delay:.12s">You put real work into your business.</p>
+    <p class="lede reveal" style="transition-delay:.24s">Your website should reflect it.</p>
+    <p class="reveal rv-r" style="transition-delay:.36s">Vanza designs and develops custom websites for businesses that are ready for a better digital presence.</p>
+  </div>
+</div></section>
+
+<!-- 3 · SELECTED WORK -->
+<section class="section" style="background:var(--bg-sub);padding-bottom:var(--space-20)"><div class="container">
+  <div class="workhead">
+    <div><span class="eyebrow">Selected work</span><h2 class="statement" style="margin-top:var(--space-4)">A few businesses we&apos;ve helped move forward.</h2></div>
+    <div class="workhead__side">
+      <span class="small">Just a few examples — we have much more.</span>
+    </div>
+  </div>
+  <div class="workscroll" id="workscroll">
+    <a class="wcard" href="https://neon-hummingbird-20fbfc.netlify.app/" target="_blank" rel="noopener"><img class="wcard__media" alt="" loading="lazy" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fneon-hummingbird-20fbfc.netlify.app%2F?w=720&h=1200"><div class="wcard__body"><span class="wcard__name">San Diego Concrete Guy</span><span class="wcard__meta">Website / Development</span></div></a>
+    <a class="wcard" href="https://www.ironkingz.com/" target="_blank" rel="noopener"><img class="wcard__media" alt="" loading="lazy" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.ironkingz.com%2F?w=720&h=1200"><div class="wcard__body"><span class="wcard__name">Iron Kingz</span><span class="wcard__meta">Website / Development</span></div></a>
+    <a class="wcard" href="https://www.localjunkman.org/" target="_blank" rel="noopener"><video class="wcard__media" style="object-position:center 22%" autoplay muted loop playsinline poster="junkman-poster.jpg"><source src="junkman.mp4" type="video/mp4"></video><div class="wcard__body"><span class="wcard__name">Local Junkman</span><span class="wcard__meta">Website / Development</span></div></a>
+    <a class="wcard" href="https://www.pacarmedsecurity.com/" target="_blank" rel="noopener"><img class="wcard__media" style="object-position:88% center" alt="" loading="lazy" src="pacarmed.jpg"><div class="wcard__body"><span class="wcard__name">Pac Armed Security</span><span class="wcard__meta">Website / Development</span></div></a>
+    <a class="wcard" href="https://www.visiblewindowsanddoors.com/" target="_blank" rel="noopener"><img class="wcard__media" alt="" loading="lazy" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.visiblewindowsanddoors.com%2F?w=720&h=1200"><div class="wcard__body"><span class="wcard__name">Visible Windows &amp; Doors</span><span class="wcard__meta">Website / Development</span></div></a>
+  </div>
+  <div class="rowwrap" style="margin-top:var(--space-8)"><a class="link" href="work.html">View all work →</a></div>
+</div></section>
+
+<!-- 4 · WHO WE WORK WITH -->
+<section class="section sec-clip" style="padding-top:var(--space-12)"><div class="container">
+  <span class="eyebrow reveal" style="display:block;margin-bottom:var(--space-10)">Built for</span>
+  <div class="clientlist">
+    <span class="cword reveal" style="transition-delay:.06s">Service companies.</span>
+    <span class="cword mut reveal rv-r" style="transition-delay:.18s">Local businesses.</span>
+    <span class="cword reveal" style="transition-delay:.30s">Growing brands.</span>
+  </div>
+  <div class="editorial" style="margin-top:var(--space-10)">
+    <p class="lede reveal rv-r" style="transition-delay:.42s">Different industries. Different challenges. Different stories.</p>
+    <p class="reveal" style="transition-delay:.54s">We build the digital presence around the business behind them.</p>
+  </div>
+</div></section>
+
+<!-- 5 · WHAT WE DO (accordion → links to internal pages for SEO) -->
+<section class="section" id="capabilities" style="background:var(--bg-sub)"><div class="container">
+  <div class="head"><span class="eyebrow">What we do</span><h2 class="statement statement--md" style="margin-top:var(--space-4)">The website comes first.</h2>
+    <p class="lead" style="margin-top:var(--space-5)">We design and develop websites around the businesses they represent — and help people find them.</p>
+  </div>
+  <div class="acc">
+    <details class="acc__item"><summary class="acc__sum">Website Development<span class="acc__ic" aria-hidden="true"></span></summary><div class="acc__body"><p>Custom websites designed and developed specifically around your business.</p><a class="link" href="services.html">Learn more →</a></div></details>
+    <details class="acc__item"><summary class="acc__sum">Search &amp; SEO<span class="acc__ic" aria-hidden="true"></span></summary><div class="acc__body"><p>Built with search in mind from the start. When your website is ready, we can continue helping through SEO and search optimization.</p><a class="link" href="services.html">Explore search →</a></div></details>
+    <details class="acc__item"><summary class="acc__sum">Ongoing Support<span class="acc__ic" aria-hidden="true"></span></summary><div class="acc__body"><p>Websites change as businesses change. We stay available for updates, improvements, new pages, and continued digital support.</p><a class="link" href="/services">Learn more →</a></div></details>
+    <details class="acc__item"><summary class="acc__sum">Our Process<span class="acc__ic" aria-hidden="true"></span></summary><div class="acc__body"><p>From understanding your business to design, development, launch, and beyond — every Vanza website starts with the business first.</p><a class="link" href="about.html">See how we work →</a></div></details>
+    <details class="acc__item"><summary class="acc__sum">About Vanza<span class="acc__ic" aria-hidden="true"></span></summary><div class="acc__body"><p>Good businesses deserve good websites. We work directly with our clients from the first idea through launch and beyond — no cookie-cutter packages, no inflated promises.</p><a class="link" href="about.html">More about us →</a></div></details>
+  </div>
+  <div class="rowwrap" style="margin-top:var(--space-10)"><a class="btn btn--secondary" href="services.html">Explore all services →</a></div>
+</div></section>
+
+<!-- Philosophy / Process / About / Search moved OFF the home page. Their content lives on the
+     internal pages (Services, About) linked from the "What we do" accordion above, for SEO. -->
+
+<!-- 10 · FINAL CTA -->
+<section class="finalcta"><div class="container">
+  <span class="eyebrow" style="display:block;margin-bottom:var(--space-6)">Have a project in mind?</span>
+  <h2 class="statement statement--xl">Let&apos;s build something worth showing off.</h2>
+  <p class="lead">Tell us a little about your business and what you&apos;re looking to build. We&apos;ll take it from there.</p>
+  <a class="btn btn--lg btn--wide" href="mailto:sales@vanzamarketing.com">Get in Touch →</a>
+  <div class="contactblock">
+    <div class="ccard">
+      <span class="ccard__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+      <div>
+        <div class="ccard__label">Call us</div>
+        <a class="ccard__val" href="tel:+16198570501">(619) 857-0501</a>
+      </div>
+    </div>
+    <div class="ccard">
+      <span class="ccard__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></span>
+      <div>
+        <div class="ccard__label">Email us at</div>
+        <a class="ccard__val" href="mailto:sales@vanzamarketing.com">sales@vanzamarketing.com</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand">VANZA<span class="dot">.</span></div>
+      <p>Websites and digital experiences for businesses.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/vanzamarketing/" target="_blank" rel="noopener" aria-label="Vanza on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.linkedin.com/company/vanzamarketing/" target="_blank" rel="noopener" aria-label="Vanza on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z"/></svg></a>
+        <a href="https://www.facebook.com/share/1Bdb8GV7ik/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Vanza on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7c0-.7.5-1 1.2-1H17V3h-2.3C12.5 3 11 4.5 11 6.8V8.5H8.5V11H11v10h3v-10h2.3l.4-2.5H14z"/></svg></a>
+      </div>
+    </div>
+    <ul class="footer__nav"><li><a href="work.html">Work</a></li><li><a href="services.html">Services</a></li><li><a href="insights.html">Insights</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+  <div class="footer__base">© 2026 Vanza Marketing</div>
+</div></footer>
+<script>
+(function(){
+  var els=document.querySelectorAll(".reveal");
+  if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in");});return;}
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});
+  },{threshold:0.25});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
