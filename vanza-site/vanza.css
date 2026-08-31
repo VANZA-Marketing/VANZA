@@ -310,4 +310,6 @@ details[open] .acc__ic::after{transform:scaleY(0)}
 .footer__social a:hover{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
 .footer__social svg{width:18px;height:18px}
 .footer__base{margin-top:var(--space-16);padding-top:var(--space-6);border-top:1px solid var(--border);font-size:var(--fs-xs);letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--subtle)}
+.footer__base a{color:var(--muted)}
+.footer__base a:hover{color:var(--text)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
